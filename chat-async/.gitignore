@@ -1,0 +1,30 @@
+# --- Cargo ---
+# Mengabaikan semua hasil kompilasi
+/target/
+
+# Mengabaikan file cadangan dari rustfmt
+**/*.rs.bk
+
+# Mengabaikan log kegagalan kompilator (jitu/ICE)
+rustc-ice-*.txt
+
+# --- IDE dan Editor ---
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ / RustRover
+.idea/
+*.iml
+
+# --- Sistem Operasi ---
+.DS_Store
+Thumbs.db
+
+# --- Opsional: Manajemen Dependensi ---
+# Buka tanda komentar (#) di bawah ini HANYA jika proyek Anda adalah sebuah LIBRARY.
+# Jika proyek Anda adalah aplikasi/binary, biarkan tetap dikomentari (jangan diabaikan).
+# Cargo.lock
